@@ -1,0 +1,96 @@
+# NSE Trading Bot - .gitignore
+
+# Environment variables
+.env
+.env.local
+credentials.py
+config/credentials.py
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb
+
+# Data files (except structure)
+data/raw/*.csv
+data/raw/*.json
+data/processed/*.csv
+data/historical/*.csv
+
+# Logs
+logs/*.log
+*.log
+
+# Models
+models/checkpoints/*
+*.h5
+*.pkl
+*.joblib
+
+# Results
+results/backtest/*.csv
+results/backtest/*.json
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Dashboard
+dashboard/node_modules/
+dashboard/build/
+dashboard/dist/
+
+# Broker credentials and sensitive data
+*.key
+*.pem
+*.crt
